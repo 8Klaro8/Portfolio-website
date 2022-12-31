@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Miniport by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+	<!-- Nav -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a href="#top">Top</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#cv">About Me</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+
+	<!-- Home -->
+	<article id="top" class="wrapper style1">
+		<div class="container">
+			<div class="row">
+				<div class="col-4 col-5-large col-12-medium">
+					<span class="image fit"><img src="assets\css\images\prof_pic.jpg" alt="" /></span>
+				</div>
+				<div class="col-8 col-7-large col-12-medium">
+					<header>
+						<h1>Hi. I'm <strong>Robin</strong>.</h1>
+						<h4>Junior Java Backend Developer</h4>
+					</header>
+					<p>And this is my <strong>Portfolio</strong> webiste, please feel free to browse around!</p>
+					<a href="#work" class="button large scrolly">See project</a>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<!-- Work -->
+	<article id="work" class="wrapper style2">
+		<div class="container">
+			<header>
+				<h2>This is my app</h2>
+				<h4>This is a basic fitness app built with java</h4>
+				<p>Below if you click on the button you will be able <br> to see detailed description and gif's to demonstrate
+					how it works!
+				</p>
+			</header>
+
+			<footer class="extend-section">
+				<p>To see the full description click the button.</p>
+				<a href="#portfolio" class="button large scrolly work-button">See more</a>
+			</footer>
+
+			<!-- Hide article inserted here -->
+			<article class="work-article hide-article">
+				<div class="container">
+					<div>
+						<h2>Brief Description of the app.</h2>
+					</div>
+					<div>
+						<p class="desctiption-article">This app was 100% built by me. My goal with this was to gain
+							experince
+							thru creating something that I feel exciting and challenging, and also
+							to have my own app as a portfolio project. Below you can see what the app is capable of.</p>
+					</div>
+					<h1 class="technologies-h1">Technologies used</h1>
+
+					<div class="row aln-center">
+
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<h2>API</h2>
+								<p>I used the Fitness Calculator from Rapidapi</p>
+								<img class="my-gif" src="assets\css\images\rapidapi-icon.png" alt="">
+								<p>The app uses the burned calorie from activity API. It calculates the burned calorie
+									based
+									on the user's weight and the workout's duration. The weight is given when the user
+									registrates
+									and the duration is a must fill in field when the user adds a new workout.</p>
+							</section>
+
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<h2>JavaFX</h2>
+								<p>First I used only Swing but I wanted to give it a better look.</p>
+								<img class="my-gif" src="assets\css\images\javafx-icon.png" alt="">
+								<p>Whit JavaFx I had some challanges to implement but overall it was not difficult to
+									learn it
+									it is it very similar to Swing. What was challenging is to migrate the entire
+									project to JavaFx, since
+									the project was close to finished when I started to implement it. Definitely worth
+									it.
+								</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<h2>Maven</h2>
+								<p>I came along with Maven and I realized, better to learn it.</p>
+								<img class="my-gif" src="assets\css\images\maven-icon.png" alt="">
+								<p>Some time I came along with Maven, because I needed to add a package and I realized,
+									that it will be much effective if I use Maven as my build tool. It was also a
+									migration but it was less time consuming. Also Maven is a tool that worth using.
+									Makes the devepoling process more effective.
+								</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<h2>PostreSQL</h2>
+								<p>The app needed a Database to save users and all their details.</p>
+								<img class="my-gif" src="assets\css\images\postgres-icon.png" alt="">
+								<p>In postgres I came along with a few challanges and the biggest was JSON.
+									Frist I intended to save data in JSON but I realized it is not the best practice
+									so I changed to storee data in different formats.
+								</p>
+							</section>
+						</div>
+						<div class="col-8 col-6-medium col-12-small">
+							<section class="box style1">
+								<h2>Detailed description</h2>
+								<p>Below I go a little bit more in dept how the app works.</p>
+								<p>First you find yourself on the login page where you are able to choose between login
+									or register.
+									If you register then you have to add a few details, including height and weight. The
+									app
+									uses the weight with an API and the height is there for future developing, maybe for
+									an other <strong>API</strong>.
+								</p>
+								<p>When the user registers then the password is hashed and salted, then it stores in
+									PostgreSQL with te rest of the details. I managed Postgres with
+									<Strong>PgAdmin</Strong>.
+								</p>
+								<p>Once logged in the user is able to set his or her details on the settings page, also
+									able to choose from several profile images
+									and enter to the add workout page which allows the user to add new workout, edit or
+									delete. The user can choose title, type, icon, and duration
+									for the workout. Only title and type are editable afterwards.
+								</p>
+							</section>
+						</div>
+						<div class="col-12 col-6-medium col-12-small">
+							<section class="">
+								<h2 class="app-demo-h1">App demo</h2>
+								<p>Below you can see how the app works. I used gifs to demonstrate it.</p>
+
+								</p>
+							</section>
+						</div>
+
+						<!-- GIFS -->
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<h2>Register</h2>
+								<p>You are able to register user.</p>
+								<span><img class="my-gif" src="assets\css\images\register_2.gif" alt=""></span>
+								<!-- <img src="https://media.giphy.com/media/JVGLHEuzbVviw/giphy.gif" alt="funny GIF" width="100%"> -->
+								<p>You have to give a username, password, height and weight as parameters.
+								</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<h2>Chande details</h2>
+								<p>Change your details.</p>
+								<img class="my-gif" src="assets\css\images\change_details_2.gif" alt="">
+								<p>You can add and/ or change your details, such as first name, last name, email, even
+									your username.
+								</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<h2>Change Profile</h2>
+								<p>Change your profile picture.</p>
+								<span><img class="my-gif" src="assets\css\images\change_prof_2.gif"
+										alt="Demo-gif-2"></span>
+								<p>You can choose from a bunch of pictures and set it as your own profile pic.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<h2>Add Wokrout</h2>
+								<p>You can add your workout.</p>
+								<span><img class="my-gif" src="assets\css\images\add_workout_2.gif"
+										alt="Demo-gif-2"></span>
+								<p>You can add as many workout as you want with title, type, icon and duration.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<h2>Edit Workout</h2>
+								<p>Edit your workouts.</p>
+								<span><img class="my-gif" src="assets\css\images\edit_workout_2.gif"
+										alt="Demo-gif-2"></span>
+								<p>You are able also to edit the title and tyep of workouts, once you created them.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<h2>Remvoe workout</h2>
+								<p>You are able to remove workouts.</p>
+								<span><img class="my-gif" src="assets\css\images\remove_workout_2.gif"
+										alt="Demo-gif-2"></span>
+								<p>Once a workout is not relevant anymore or added by mistaken then you can just remove it.</p>
+							</section>
+						</div>
+					</div>
+				</div>
+		</div>
+	</article>
+	</div>
+	</article>
+
+	<!-- Portfolio -->
+	<article id="cv" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>About Me</h2>
+				<p>Short description about me and my skills.</p>
+			</header>
+			<div class="row">
+				<div class="col-12 col-6-medium col-12-small">
+					<h3>Short Description</h3>
+					<p class="description-text">I started out by myself learning Python first, then Java.
+						I began with courses on Udemy and as soon as I got into the
+						development deeper I started out my own projects, such as
+						Linked-in job applying/ saving bot, Instagram follower bot,
+						fitness app - I am currently building this one.</p>
+				</div>
+
+				<div class="col-4 col-6-medium col-12-small description-phase">
+					<h3>Skills</h3>
+					<p><Strong>Languages: </Strong>Java, Python, CSS, HTML</p>
+					<p><Strong>Frameworks: </Strong>Flask, Bootstrap</p>
+					<p><Strong>Database: </Strong>PostrgeSQL, SQLite</p>
+					<p><Strong>Other technologies: </Strong>Maven, REST API, Unit test</p>
+				</div>
+
+				<div class="col-8 col-6-medium col-12-small align-left  description-phase">
+					<p>Once I learned th basics of <strong>Java</strong> I started to learn by building small things and
+						figuring out how everything work. When I felt comfortable enough, I started to build my Fitness
+						App</p>
+					<p>With <strong>Python</strong> I have built several smaller and bigger projects, like insta-bot,
+						twitter compain-bot, Linkedin job hunting-bot.
+						I have learned more frameworks when I used Python, such as Flask and Bootstrap.</p>
+					<p>I used unit test and REST API both with Java and Python. This is something I frequently.
+						I also learned Maven because I saw what potential it has and how it can make my work easier to
+						work.</p>
+				</div>
+			</div>
+			<footer>
+				<p>If you would like to reach out send a message below or call me: <strong>+36 70 544 7569</strong></p>
+				<a href="#contact" class="button large scrolly">Write a message to me.</a>
+			</footer>
+		</div>
+	</article>
+
+	<!-- Contact -->
+	<article id="contact" class="wrapper style4">
+		<div class="container medium">
+			<header>
+				<h2>If you are interested...</h2>
+				<p>Reach out to schedule a talk.</p>
+				<p>or</p>
+				<p>call me at: +36 70 544 7569</p>
+
+			</header>
+			<div class="row">
+				<div class="col-12">
+					<form method="post" action="mailto:roningerg@gmail.com" enctype="text/plain">
+						<div class="row">
+							<div class="col-6 col-12-small">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="col-6 col-12-small">
+								<input type="text" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="col-12">
+								<input type="text" name="subject" id="subject" placeholder="Subject" />
+							</div>
+							<div class="col-12">
+								<textarea name="message" id="message" placeholder="Message"></textarea>
+							</div>
+							<div class="col-12">
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="reset" value="Clear Form" class="alt" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-12">
+					<hr />
+					<h3>Find me on ...</h3>
+					<ul class="social">
+						<li><a href="https://www.facebook.com/robin.gergelyfi/" class="icon brands fa-facebook-f"><span
+									class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/in/robin-gergelyfi-1b6990162/"
+								class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/8Klaro8" class="icon brands fa-github"><span
+									class="label">Github</span></a></li>
+
+					</ul>
+					<hr />
+				</div>
+			</div>
+			<footer>
+				<ul id="copyright">
+					<li>&copy; RobinGerg. All rights reserved.</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+		</div>
+	</article>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
