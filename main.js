@@ -67,22 +67,25 @@ var workArticle = document.querySelector(".work-article");
 var origButtonContent = extendButton.textContent;
 
 extendButton.addEventListener("click", function () {
-	workArticle.classList.toggle('hide-article');
-	
-	if (workArticle.classList.contains('hide-article')) {
-		extendButton.textContent = origButtonContent;
-	} else {
-		extendButton.textContent = "Close";
-	}
 
-	// if (!(workArticle.classList.contains("showed-article"))) {
-	// 	workArticle.classList.add("showed-article")
-	// 	extendButton.textContent = "Close";
-	// }
-	// else if (workArticle.classList.contains("showed-article")){
-	// 	workArticle.classList.remove("showed-article");
-	// 	extendButton.textContent = "See More";
-	// }
+	if (!(workArticle.classList.contains("open"))) {
+		workArticle.style.display = "block";
+		extendButton.textContent = "Close";
+		setTimeout(function () {
+			workArticle.style.height = '310vh';
+			workArticle.style.opacity = '100%';
+			workArticle.classList.add("open");
+		}, 5)
+	}
+	else if (workArticle.classList.contains("open")) {
+		workArticle.style.height = '0vh';
+		workArticle.style.opacity = '0';
+		extendButton.textContent = 'See more';
+		setTimeout(() => {
+			workArticle.classList.remove("open");
+			workArticle.style.display = 'none';
+		}, 200);
+	}
 });
 
 // send email
@@ -101,4 +104,3 @@ function sendEmail() {
 		console.log(Error);
 	})
 }
-	
