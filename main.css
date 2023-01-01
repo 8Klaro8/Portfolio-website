@@ -2240,9 +2240,9 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 
-			.work-article {
-				overflow-y: scroll;
-			}
+		.work-article {
+			overflow-y: scroll;
+		}
 		
 		/* Basic */
 
