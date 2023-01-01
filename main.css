@@ -2474,26 +2474,19 @@ input, select, textarea {
 		transition: height 0.5s ease-in-out;
 	}
 
-	/* .to-grow {
-		height: 800px;
-	} */
-
-	.hide-article {
+	/* .hide-article {
 		height: 0;
 		opacity: 0;
-	}
-
-	.showed-article {
-		/* position: fixed; */
-		height: 310vh;
-		opacity: 100%;
-		/* overflow-y: scroll; */
-	}
+	} */
 
 	.work-article {
 		transition: 0.3s ease-in-out;
 		text-align: center;
 		padding-top: 100px;
+		opacity: 0;
+		height: 0;
+		display: none;
+		transition: height 0.2s ease-in-out, opacity 0.2s ease-in-out;
 	}
 	.desctiption-article {
 		width: 70%;
@@ -2510,4 +2503,12 @@ input, select, textarea {
 		background-color: rgb(235, 235, 235);
 		color: #000000;
 	}
+
+	.work-article.open {
+		display: block;
+		height: 310vh;
+		opacity: 1;
+	  }
+
+
 
