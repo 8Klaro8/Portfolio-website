@@ -2513,6 +2513,9 @@ input, select, textarea {
 		height: 310vh;
 		opacity: 1;
 	  }
+	.work-article {
+		overflow-y: scroll;
+	}
 
 	@media screen and (max-width: 736px) {
 
