@@ -2514,5 +2514,12 @@ input, select, textarea {
 		opacity: 1;
 	  }
 
+	@media screen and (max-width: 736px) {
+
+		.work-article {
+			overflow-y: scroll;
+		}
+	}
+
 
 
